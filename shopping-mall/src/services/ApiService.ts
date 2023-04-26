@@ -103,7 +103,7 @@ export default class ApiService {
   }
 
   // signup
-  async singup({ email, name, password }: {
+  async signup({ email, name, password }: {
       email: string;
       name: string;
       password: string;
