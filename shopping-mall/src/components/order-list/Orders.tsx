@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-import { OrderSummary } from '../../types';
-
 import Order from './Order';
+
+import { OrderSummary } from '../../types';
 
 const Container = styled.div`
   li {

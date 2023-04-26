@@ -1,6 +1,6 @@
 import useFetchOrders from '../hooks/useFetchOrders';
 
-import Orders from '../components/order/Orders';
+import Orders from '../components/order-list/Orders';
 
 export default function OrderListPage() {
   const { orders } = useFetchOrders();

@@ -16,6 +16,9 @@ import GlobalStyle from './styles/GlobalStyle';
 const router = createBrowserRouter(routes);
 
 function main() {
+  // [최초 1회만] 주문 페이지에서 가맹점 식별코드를 이용하여 IMP 객체를 초기화 합니다.
+  Reflect.get(window, 'IMP').init(process.env.PORTONE_IMP);
+
   const container = document.getElementById('root');
   if (!container) {
     return;

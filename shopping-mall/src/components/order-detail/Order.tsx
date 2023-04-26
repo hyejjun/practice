@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { OrderDetail } from '../../types';
 
-import Table from '../ui/Table';
+import Table from '../line-item/Table';
 
 const Container = styled.div`
   dl {

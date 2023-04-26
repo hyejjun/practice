@@ -113,6 +113,23 @@ export default class ApiService {
     return accessToken;
   }
 
+  // 주문
+  async createOrder({ receiver, payment }:{
+    receiver:{
+      name:string;
+      address1: string;
+      address2: string;
+      postalCode: string;
+      phoneNumber: string;
+    };
+    payment: {
+      merchantId: string;
+      transactionId: string;
+    };
+  }): Promise<void> {
+    await this.instance.post('/orders', { receiver, payment });
+  }
+
   // 주문 목록
   async fetchOrders():Promise<OrderSummary[]> {
     const { data } = await this.instance.get('/orders');

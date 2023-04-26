@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom';
+
+import Table from '../line-item/Table';
+
 import { Cart } from '../../types';
 import Button from '../ui/Button';
-
-import Table from '../ui/Table';
 
 type CartViewProps = {
   cart: Cart;

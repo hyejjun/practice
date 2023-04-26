@@ -4,7 +4,7 @@ import { LineItem } from '../../types';
 
 import numberFormat from '../../utils/numberFormat';
 
-import LineItemView from '../cart/LineItemView';
+import LineItemView from './LineItemView';
 
 const Container = styled.div`
   table {
