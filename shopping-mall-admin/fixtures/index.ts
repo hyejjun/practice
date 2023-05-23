@@ -1,5 +1,11 @@
-import cart from './cart';
+import users from './users';
+import categories from './categories';
+import products from './products';
+import orders from './orders';
 
 export default {
-  cart,
+  users,
+  categories,
+  products,
+  orders,
 };

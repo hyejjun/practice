@@ -12,6 +12,7 @@ export type Category = {
 }
 
 export type Image = {
+  id?: string;
   url: string;
 }
 
@@ -25,16 +26,14 @@ export type ProductSummary = {
 }
 
 export type ProductOptionItem = {
-  id: string;
+  id?: string;
   name: string;
-  deleted: boolean;
 };
 
 export type ProductOption = {
-  id: string;
+  id?: string;
   name: string;
   items: ProductOptionItem[];
-  deleted: boolean;
 };
 
 export type ProductDetail = {
