@@ -5,6 +5,9 @@ const defaultTheme = {
     primary: '#42F',
     secondary: '#888',
   },
+  sizes: {
+    labelWidth: '10rem',
+  },
 };
 
 export default defaultTheme;

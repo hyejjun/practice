@@ -69,8 +69,80 @@ export default class ApiService {
     categoryId: string;
     name: string;
     hidden: boolean;
-}): Promise<void> {
+  }): Promise<void> {
     await this.instance.patch(`/categories/${categoryId}`, { name, hidden });
+  }
+
+  // 상품 생성
+  async createProduct({
+    categoryId,
+    images,
+    name,
+    price,
+    options,
+    description,
+  }: {
+    categoryId: string,
+    images: {
+      url: string;
+    }[],
+    name: string,
+    price: number,
+    options: {
+      name: string;
+    }[],
+    description: string,
+  }): Promise<void> {
+    await this.instance.post('/products', {
+      categoryId,
+      images,
+      name,
+      price,
+      options,
+      description,
+    });
+  }
+
+  // 상품 수정
+  async updateProduct({
+    productId,
+    categoryId,
+    images,
+    name,
+    price,
+    options,
+    description,
+  }: {
+    productId: string;
+    categoryId: string,
+    images: {
+      url: string;
+    }[],
+    name: string,
+    price: number,
+    options: {
+      name: string;
+    }[],
+    description: string,
+  }): Promise<void> {
+    await this.instance.patch(`/products/${productId}`, {
+      categoryId,
+      images,
+      name,
+      price,
+      options,
+      description,
+    });
+  }
+
+  // 주문 수정
+  async updateOrder({ orderId, status }:{
+    orderId: string;
+    status: string;
+  }) {
+    await this.instance.patch(`orders/${orderId}`, {
+      status,
+    });
   }
 }
 

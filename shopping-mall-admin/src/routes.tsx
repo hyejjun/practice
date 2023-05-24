@@ -7,6 +7,11 @@ import CategoryNewPage from './page/CategoryNewPage';
 import CategoryEditPage from './page/CategoryEditPage';
 import ProductListPage from './page/ProductListPage';
 import ProductDetailPage from './page/ProductDetailPage';
+import ProductNewPage from './page/ProductNewPage';
+import ProductEditPage from './page/ProductEditPage';
+import OrderListPage from './page/OrderListPage';
+import OrderDetailPage from './page/OrderDetailPage';
+import OrderEditPage from './page/OrderEditPage';
 
 const routes = [
   { path: '/login', element: <LoginPage /> },
@@ -19,12 +24,12 @@ const routes = [
       { path: '/categories/new', element: <CategoryNewPage /> },
       { path: '/categories/:id/edit', element: <CategoryEditPage /> },
       { path: '/products', element: <ProductListPage /> },
-      // { path: '/products/new', element: <ProductNewPage /> },
+      { path: '/products/new', element: <ProductNewPage /> },
       { path: '/products/:id', element: <ProductDetailPage /> },
-      // { path: '/products/:id/edit', element: <ProductEditPage /> },
-      // { path: '/orders', element: <OrderListPage /> },
-      // { path: '/orders/:id', element: <OrderDetailPage /> },
-      // { path: '/orders/:id/edit', element: <OrderEditPage /> },
+      { path: '/products/:id/edit', element: <ProductEditPage /> },
+      { path: '/orders', element: <OrderListPage /> },
+      { path: '/orders/:id', element: <OrderDetailPage /> },
+      { path: '/orders/:id/edit', element: <OrderEditPage /> },
     ],
   },
 ];
