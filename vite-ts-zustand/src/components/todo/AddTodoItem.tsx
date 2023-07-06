@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-import { useTodoStore } from '../../store/TodoList';
+import { useTodoStore } from '../../store/TodoListStore';
+
+import Button from '../ui/Button';
 
 export default function AddTodoItem() {
   const [value, setValue] = useState('');
@@ -19,7 +21,7 @@ export default function AddTodoItem() {
   };
 
   return (
-    <>
+    <div>
       <input
         type="text"
         placeholder="write your todo list"
@@ -29,14 +31,9 @@ export default function AddTodoItem() {
         }}
         onKeyDown={(e) => activeEnter(e)}
       />
-      <button
-        type="button"
-        onClick={() => {
-          addItem();
-        }}
-      >
+      <Button onClick={() => { addItem(); }}>
         Save
-      </button>
-    </>
+      </Button>
+    </div>
   );
 }

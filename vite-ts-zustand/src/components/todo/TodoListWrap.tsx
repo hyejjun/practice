@@ -5,8 +5,10 @@ export default function TodoListWrap() {
   return (
     <div>
       <h2>TO DO LIST</h2>
-      <TodoList />
-      <AddTodoItem />
+      <div>
+        <TodoList />
+        <AddTodoItem />
+      </div>
     </div>
   );
 }
