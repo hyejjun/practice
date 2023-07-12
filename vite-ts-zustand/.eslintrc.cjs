@@ -56,6 +56,8 @@ module.exports = {
         '**/*.test.jsx',
         '**/*.test.ts',
         '**/*.test.tsx',
+        '**/mocks/*.js',
+        '**/mocks/*.ts',
       ],
     }],
     'import/extensions': ['error', 'ignorePackages', {
@@ -69,5 +71,7 @@ module.exports = {
     }],
     'react/require-default-props': [2, { functions: 'defaultArguments' }],
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 };

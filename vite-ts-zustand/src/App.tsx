@@ -1,8 +1,8 @@
-import SignUp from './components/signup/SignUp';
+import MockUp from './components/mock/MockUp';
 
 function App() {
   return (
-    <SignUp />
+    <MockUp />
   );
 }
 
