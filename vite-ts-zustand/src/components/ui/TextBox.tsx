@@ -3,8 +3,9 @@ import { useRef } from 'react';
 
 import { styled } from 'styled-components';
 
-const Container = styled.div<{ label?: boolean }>`
+const Container = styled.div<{ label?: string }>`
   label {
+    width: 5rem;
     display: ${(props) => (props.label ? 'inline-block' : 'none')};
   }
 `;
@@ -36,7 +37,7 @@ export default function TextBox({
   };
 
   return (
-    <Container label={!!label.length}>
+    <Container label={label}>
       <label htmlFor={id.current}>{label}</label>
       <input
         type={type}

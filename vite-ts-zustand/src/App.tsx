@@ -1,8 +1,8 @@
-import TodoListWrap from './components/todo/TodoListWrap';
+import SignUp from './components/signup/SignUp';
 
 function App() {
   return (
-    <TodoListWrap />
+    <SignUp />
   );
 }
 

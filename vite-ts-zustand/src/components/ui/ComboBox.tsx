@@ -1,12 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
-import styled from 'styled-components';
-
-const Container = styled.div`
-  label {
-    margin-right: .5rem;
-  }
-`;
+import { styled } from 'styled-components';
 
 type ComboBoxProps<T> = {
   label: string;
@@ -16,6 +10,12 @@ type ComboBoxProps<T> = {
   itemToText: (item: T) => string;
   onChange: (item: T | null) => void;
 }
+
+const Container = styled.div`
+  label {
+    margin-right: .5rem;
+  }
+`;
 
 export default function ComboBox<T>({
   label, selectedItem, items, itemToId, itemToText, onChange,
@@ -27,24 +27,21 @@ export default function ComboBox<T>({
     const selected = items.find((item) => itemToId(item) === value);
     onChange(selected ?? null);
   };
-
-  console.log(selectedItem, items);
-
   return (
     <Container>
-      <label htmlFor={id.current}>
-        {label}
-      </label>
+      <label htmlFor={id.current}>{label}</label>
       <select
         id={id.current}
         onChange={handleChange}
         value={itemToId(selectedItem)}
       >
-        {items.map((item) => (
-          <option key={itemToId(item)} value={itemToId(item)}>
-            {itemToText(item)}
-          </option>
-        ))}
+        {
+          items.map((item) => (
+            <option key={itemToId(item)} value={itemToId(item)}>
+              {itemToText(item)}
+            </option>
+          ))
+        }
       </select>
     </Container>
   );
