@@ -1,12 +1,12 @@
 import { create } from 'zustand';
 
-import { TodoListItem as TodoList } from '../type/TodoList';
+import type { TodoListItem } from '../type/TodoList';
 
 interface TodoState {
-  todoList: TodoList[],
+  todoList: TodoListItem[],
   addTodoItem: (val: string) => void;
   deleteTodoItem: (id: string) => void;
-  updateTodoItem: (list: TodoList[]) => void;
+  updateTodoItem: (list: TodoListItem[]) => void;
 }
 
 export const useTodoStore = create<TodoState>((set) => ({
