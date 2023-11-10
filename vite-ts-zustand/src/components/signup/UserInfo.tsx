@@ -1,4 +1,4 @@
-import { useSignupStore } from '../../store/SignupStore';
+import { useSignupStore } from '@store/SignupStore';
 
 export default function UserInfo() {
   const userInfo = useSignupStore((state) => state.userInfo);

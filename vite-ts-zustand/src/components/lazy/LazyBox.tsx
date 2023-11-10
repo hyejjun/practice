@@ -1,4 +1,4 @@
-import image from '../../images/lazy.jpg';
+import image from '@images/lazy.jpg';
 
 export default function LazyBox() {
   return (

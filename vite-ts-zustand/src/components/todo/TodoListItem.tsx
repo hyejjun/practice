@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import type { TodoListItem } from '../../type/TodoList';
+import type { TodoListItem } from '@type/TodoList';
 
-import { useTodoStore } from '../../store/TodoListStore';
+import { useTodoStore } from '@store/TodoListStore';
 
 type TodoListItemProps = {
   item : TodoListItem

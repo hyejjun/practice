@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { useTodoStore } from '../../store/TodoListStore';
+import { useTodoStore } from '@store/TodoListStore';
 
-import Button from '../ui/Button';
+import Button from '@ui/Button';
 
 export default function AddTodoItem() {
   const [value, setValue] = useState('');

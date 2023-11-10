@@ -1,6 +1,6 @@
 /* eslint-disable react/function-component-definition */
 import * as React from 'react';
-import NoImage from '../../images/noImgae.gif';
+import NoImage from '@images/noImgae.gif';
 
 interface ILazyImage {
     src: string;

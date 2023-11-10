@@ -1,4 +1,4 @@
-import Loading from '../../images/loading.gif';
+import Loading from '@images/loading.gif';
 
 export default function PlaceholderComponent() {
   return (

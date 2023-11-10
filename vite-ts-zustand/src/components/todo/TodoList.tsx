@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
-import { useTodoStore } from '../../store/TodoListStore';
+import { useTodoStore } from '@store/TodoListStore';
 
-import Button from '../ui/Button';
+import Button from '@ui/Button';
 
 import TodoListItem from './TodoListItem';
 

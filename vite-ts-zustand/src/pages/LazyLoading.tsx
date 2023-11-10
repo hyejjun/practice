@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import LazyImage from '../components/lazy/LazyImage';
+import LazyImage from '@components/lazy/LazyImage';
 
 export default function LazyLoading() {
   return (

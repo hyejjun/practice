@@ -2,9 +2,9 @@
 
 import LazyLoad from 'react-lazyload';
 
-import LazyBox from '../components/lazy/LazyBox';
+import LazyBox from '@components/lazy/LazyBox';
 
-import PlaceholderComponent from '../components/lazy/PlaceholderComponent';
+import PlaceholderComponent from '@components/lazy/PlaceholderComponent';
 
 export default function LazyLoadWithLib() {
   return (

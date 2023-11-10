@@ -4,7 +4,7 @@ import { useBoolean } from 'usehooks-ts';
 
 import { styled } from 'styled-components';
 
-import { useSignupStore } from '../../store/SignupStore';
+import { useSignupStore } from '@store/SignupStore';
 
 import Button from '../ui/Button';
 import TextBox from '../ui/TextBox';

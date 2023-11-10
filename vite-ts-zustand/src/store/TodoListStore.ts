@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-import type { TodoListItem } from '../type/TodoList';
+import type { TodoListItem } from '@type/TodoList';
 
 interface TodoState {
   todoList: TodoListItem[],

@@ -1,4 +1,4 @@
-import { useSalmon, useTuna, resetAllStores } from '../../store/FishStore';
+import { useSalmon, useTuna, resetAllStores } from '@store/FishStore';
 
 export default function FishCounter() {
   const salmon = useSalmon((state) => state.salmon);
